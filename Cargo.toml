@@ -6,7 +6,7 @@ edition = "2018"
 license-file = "LICENSE"
 description = "A rusty, dual-wielding Quake and Half-Life texture WAD parser."
 repository = "https://github.com/Shfty/ogre/"
-keywords = ["wad", "wad2", "wad3", "quake", "half-life", "textures", "gamedev", "async"]
+keywords = ["wad", "quake", "textures", "gamedev", "async"]
 categories = ["parsing", "parser-implementations", "rendering::data-formats", "game-development", "asynchronous"]
 exclude = [
     ".vscode/*",
