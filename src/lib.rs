@@ -1,6 +1,6 @@
 #![forbid(unsafe_code)]
 
-//! # A rusty, dual-wielding Quake and Half-Life WAD parser
+//! # A rusty, dual-wielding Quake and Half-Life texture WAD parser
 //! [`ogre`](crate) is a rust representation and [`nom`] parser for Quake and Half-Life [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) files.
 //!
 //! It's written in pure Rust, and enforces the use of safe code crate-wide via `#![forbid(unsafe_code)]`.
