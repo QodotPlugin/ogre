@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Josh Palmer <jpalmerwatkins@gmail.com>"]
 edition = "2018"
 license = "MIT"
-license-file = "LICENSE"
 description = "A rusty, dual-wielding Quake and Half-Life texture WAD parser."
 repository = "https://github.com/Shfty/ogre/"
 keywords = ["wad", "quake", "textures", "gamedev", "async"]
