@@ -14,7 +14,7 @@ For cases where you want to inspect these elements of a [`WAD`](https://www.game
 
 ## Parsing
 
-The simplest way to parse a [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) file into AST is via the [`parser::parse_wad`] function:
+The simplest way to parse a [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) file into AST is via the `parser::parse_wad` function:
 
 ```rust
 let wad = include_bytes!("../../ogre/test_data/wad2/medieval.wad");
