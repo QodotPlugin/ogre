@@ -12,6 +12,9 @@
 //! The [`WadSourceStream`] trait represents a stream that can generate an infinite amount of these handles given some source data,
 //! concrete implementations of which are provided via [`SourceStreamSlice`], [`SourceStreamVec`], and [`SourceStreamFile`].
 
+#[cfg(doc)]
+use async_std::io::{ReadExt, prelude::SeekExt};
+
 pub mod parse;
 pub mod wad_source;
 
@@ -23,9 +26,6 @@ use wad_source::*;
 use futures::{StreamExt, TryFutureExt, TryStream};
 
 use crate::repr::{texture::Texture, Wad};
-
-#[cfg(doc)]
-use async_std::io::{ReadExt, prelude::SeekExt};
 
 pub type IoError = async_std::io::Error;
 

@@ -1,7 +1,7 @@
 #![forbid(unsafe_code)]
 
 //! # A rusty, dual-wielding Quake and Half-Life texture WAD parser
-//! [`ogre`](crate) is a rust representation and [`nom`] parser for Quake and Half-Life [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) files.
+//! [`ogre`](crate) is a Rust representation and [`nom`] parser for Quake and Half-Life [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) files.
 //!
 //! It's written in pure Rust, and enforces the use of safe code crate-wide via `#![forbid(unsafe_code)]`.
 //!
@@ -13,7 +13,7 @@
 //! For cases where you want to inspect these elements of a [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0), the [`parser`] module contains its own [`parser::repr`] submodule, as well as `nom` functions for parsing into the structures therein.
 //!
 //! ## Parsing
-//! The simplest way to parse a [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) file into AST is via the [`parser::parse_wad`] function:
+//! The simplest way to parse a [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) file into rust representation is via the [`parser::parse_wad`] function:
 //! ```
 //! let wad = include_bytes!("../../ogre/test_data/wad2/medieval.wad");
 //! let (_, wad) = ogre::parser::parse_wad(wad).expect("Failed to parse WAD");
@@ -22,7 +22,7 @@
 //! ```
 //!
 //! This will parse a complete [`Wad`], and block the calling thread until completion.
-//! Internally, it calls the rest of functions [`parser`] module to assemble its final output.
+//! Internally, it calls the rest of the functions in the [`parser`] module to assemble its final output.
 //! These can also be used directly in cases where more granular parsing is desired.
 //!
 //! For better performance, a parallelized implementation is recommended. See the [`Async`](#Async) header below for more.
