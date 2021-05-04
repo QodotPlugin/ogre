@@ -1,4 +1,15 @@
-# A rusty, dual-wielding Quake and Half-Life texture WAD parser
+# Ogre &emsp; [![License]][mit] [![Latest Version]][crates.io] [![Documentation]][docs.rs]
+
+[License]: https://img.shields.io/badge/license-MIT-blue.svg
+[mit]: LICENSE
+
+[Latest Version]: https://img.shields.io/crates/v/ogre.svg
+[crates.io]: https://crates.io/crates/ogre
+
+[Documentation]: https://docs.rs/ogre/badge.svg
+[docs.rs]: https://docs.rs/ogre
+
+## A rusty, dual-wielding Quake and Half-Life texture WAD parser
 
 `ogre` is a rust representation and `nom` parser for Quake and Half-Life [`WAD`](https://www.gamers.org/dEngine/quake/spec/quake-spec34/qkspec_7.htm#CWAD0) files.
 
