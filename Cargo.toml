@@ -21,7 +21,7 @@ serde_support = ["serde", "serde-big-array"]
 nom = "7.0.0"
 
 [dependencies.serde]
-version = "1.0.125"
+version = "1.0.130"
 features = ["derive"]
 optional = true
 
@@ -31,9 +31,9 @@ features = ["const-generics"]
 optional = true
 
 [dependencies.futures]
-version = "0.3.14"
+version = "0.3.17"
 optional = true
 
 [dependencies.async-std]
-version = "1.9.0"
+version = "1.10.0"
 optional = true
