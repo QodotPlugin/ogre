@@ -18,7 +18,7 @@ async = ["futures", "async-std"]
 serde_support = ["serde", "serde-big-array"]
 
 [dependencies]
-nom = "6.1.2"
+nom = "7.0.0"
 
 [dependencies.serde]
 version = "1.0.125"
