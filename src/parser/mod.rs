@@ -21,8 +21,6 @@ pub use texture::*;
 pub use wad::*;
 
 use nom::IResult;
-pub use palette::*;
-pub use wad::*;
 
 /// Given a length, returns a function that parses a null-terminated string slice from a byte slice.
 pub fn parse_byte_string(length: usize) -> impl Fn(&[u8]) -> IResult<&[u8], &str> {
