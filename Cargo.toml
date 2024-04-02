@@ -1,6 +1,6 @@
 [package]
 name = "ogre"
-version = "0.1.6"
+version = "0.1.7"
 authors = ["Josh Palmer <jpalmerwatkins@gmail.com>"]
 edition = "2018"
 license = "MIT"
